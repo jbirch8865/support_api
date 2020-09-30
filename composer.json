@@ -9,11 +9,14 @@
     "license": "MIT",
     "require": {
         "php": "^7.2.5",
+        "anlutro/curl": "^1.4",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^6.3",
+        "jbirch8865/php_tools": "^3.0",
         "laravel/framework": "^7.24",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.0",
+        "mashape/unirest-php": "^3.0"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
@@ -39,6 +42,9 @@
         "classmap": [
             "database/seeds",
             "database/factories"
+        ],
+        "files": [
+            "app/trello.php"
         ]
     },
     "autoload-dev": {

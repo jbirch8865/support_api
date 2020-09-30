@@ -16,6 +16,7 @@ class IssueType extends Seeder
         DB::table('issuetypes')->where('name', '=', "Pretty sure this isn't working the way it should.")->delete();
         DB::table('issuetypes')->where('name', '=', "How the heck am I supposed to ...")->delete();
         DB::table('issuetypes')->where('name', '=', "Man, it sure would be cool if ...")->delete();
+        DB::table('issuetypes')->where('name', '=', "I found some information that needs to be changed")->delete();
         DB::table('issuetypes')->where('name', '=', "bug")->delete();
         DB::table('issuetypes')->where('name', '=', "enhancement")->delete();
         DB::table('issuetypes')->where('name', '=', "feature")->delete();
@@ -43,16 +44,21 @@ class IssueType extends Seeder
         ]);
         DB::table('issuetypes')->insert([
             'id' => 5,
+            'name' => "I found some information that needs to be changed",
+            'visible' => true
+        ]);
+        DB::table('issuetypes')->insert([
+            'id' => 6,
             'name' => "bug",
             'visible' => false
         ]);
         DB::table('issuetypes')->insert([
-            'id' => 6,
+            'id' => 7,
             'name' => "enhancement",
             'visible' => false
         ]);
         DB::table('issuetypes')->insert([
-            'id' => 7,
+            'id' => 8,
             'name' => "feature",
             'visible' => false
         ]);
